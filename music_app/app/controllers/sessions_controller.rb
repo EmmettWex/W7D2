@@ -1,4 +1,4 @@
-class SessionController < ApplicationController
+class SessionsController < ApplicationController
     # reddit example login form
 
     before_action :require_logged_out, only: [:new, :create]

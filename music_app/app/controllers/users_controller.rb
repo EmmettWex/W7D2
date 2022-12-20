@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
     # reddit example equivalent sign up form
 
     def new

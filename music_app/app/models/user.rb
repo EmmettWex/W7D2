@@ -21,11 +21,11 @@ class User < ApplicationRecord
 
     attr_reader :password
 
-    def self.find_by_credentials(username, password)
+    def self.find_by_credentials(email, password)
         # look up by username (can index this)
         # password is used to confirm that the person who is signing in
         # owns the account, will probably call #is_password? here
-        user = User.find_by(username: username)
+        user = User.find_by(email: email)
 
         # if user EXISTS and the password matches the input password
         # return user, otherwise return nil
